@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +67,86 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
+
+
+___________________________________________________________________________________________________
+
+
+# _______________________________  Class base component: -_______________________________________
+
+# First, understand what a component is?
+A component is a reusable piece of UI in a React application.
+For example, suppose you are building a website with a Navbar, About page, and Footer.
+so , Navbar, about page , footer , header, or so on are also called component. because each part can be a separate components.
+
+React mainly has two ways to define components:
+1. Function based Component   — components written using JavaScript functions.
+2. Class based Component      — components written using JavaScript classes.
+
+Both can display UI, receive props, and update the screen. Their main differences are how they handle state, lifecycle logic, and other React features.
+
+# Class based Component 👍
+A Class-Based Component is a React component created using an ES6 JavaScript class that extends React.Component.
+
+# Syntax : To create / import a class based components to use short form : " rcc "  and then enter.
+
+import React from 'react';
+
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, React!</h1>;
+  }
+}
+
+export default Welcome;
+
+ __________________________
+|Class Component           |
+|Extends React.Component   |
+|__________________________|
+
+ __________________________
+|render()                  |
+|Returns the UI description|
+|__________________________|
+
+ __________________________
+|Hello React!              |
+|Displayed on the screen   |
+|__________________________|
+
+# Let's understand every line.
+Code	                         Meaning
+class Welcome	                 Creates a JavaScript class named Welcome.
+extends React.Component	         Gives the class React component functionality.
+render()	                     Defines the UI that the component returns.
+return (...)	                 Returns the JSX to display.
+export default Welcome	         Allows other files to import the component.
+
+# render() is a method that tells React what UI (a structure similar to HTML) should be displayed on the screen.
+Suppose 👍
+
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello React!</h1>;
+  }
+}
+
+Here, render() tells React to display the heading Hello React! on the screen.
+
+# Why do we write render() in Class-Based Components?
+A class is a JavaScript class. React uses the render() method to get the UI description from a class component.
+
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello React!</h1>;
+  }
+}
+
+# Why is render() not used in Function-Based Components?
+In a Function-Based Component, the function itself returns the UI. Therefore, there is no need to write a separate render() method.
+
+function Welcome() {
+  return <h1>Hello React!</h1>;
+}
