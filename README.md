@@ -150,3 +150,5 @@ In a Function-Based Component, the function itself returns the UI. Therefore, th
 function Welcome() {
   return <h1>Hello React!</h1>;
 }
+# NewsApp
+Create a NewsApp by using Class Based Component for learning purpose
