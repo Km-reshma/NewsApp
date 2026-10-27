@@ -1,0 +1,14 @@
+import React, { Component } from 'react'
+
+export class News extends Component {
+  render() {
+    return (
+      <div>
+        This is a news Component.
+        <NewsItem />
+      </div>
+    )
+  }
+}
+
+export default News
